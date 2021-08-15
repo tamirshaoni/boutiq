@@ -1,0 +1,123 @@
+html, body {
+  margin: 0;
+  font-family: Helvetica, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.announce-bar {
+  background-color: #ea0658;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  margin: 0;
+}
+
+#image {
+  background-image: -webkit-image-set(url("images/water1.jpg") 4x,
+      url("images/water2.jpg") 3x,
+      url("images/water3.jpg") 2x,
+      url("images/water4.jpg") 1x);
+  max-width: 1920px;
+  width: 100%;
+  max-height: 824px;
+  padding-top: 12%;
+  padding-bottom: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  background
+  opacity: 0.75;
+}
+
+.imgContent {
+  position: relative;
+  line-height: 1.5em;
+  color: white;
+}
+#zg{
+  background-image: url(images/zg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 375px;
+  height: 375px;
+  display: inline-block;
+  position: relative;
+}
+.nih{
+  font-family: 'Heebo', sans-serif;
+  background-color: ;
+  height: 400px;
+  width: 400px;
+}
+.nih a{
+  position: relative;
+  right: 15%;
+  font-size: 1.4em;
+  color: #FF2E63;
+}
+.nih img{
+  position: relative;
+  right:5%;
+  top:10%;
+  margin-top: 20px;
+}
+.nih ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.fimg{
+  background-image: -webkit-image-set(url("images/la1.jpg") 4x,
+      url("images/la2.jpg") 3x,
+      url("images/la3.jpg") 2x,
+      url("images/la4.jpg") 1x);
+      max-width: 1920px;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+      color: white;
+}
+.fcc{
+  width: 100%;
+  height: 425px;
+  max-width: 425px;
+  background-image: url(images/zg.jpg);
+
+}
+.fcc:hover{
+  opacity: 0.3;
+}
+.fcc h2{
+  position: relative;
+  top: 10%;
+  text-align: center;
+  color: white;
+  opacity: 0.75;
+}
+.fcc p{
+  position: relative;
+  top: 50%;
+  text-align: center;
+  color: white;
+  opacity: 0.75;
+}
+.suites h5{
+  color: white;
+  text-align: center;
+font-size: 1.1em; text-shadow: 0 0 4px black;
+}
+.suites a{
+  position: relative;
+  bottom:12%;
+  background: rgba(0, 0, 0, 0.1);
+}
+.suites img:hover{
+  opacity: 0.7;
+}

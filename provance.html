@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no, inital-scale=1.0" />
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>ניחוחות פרובנס - סוויטות</title>
+</head>
+
+<body>
+  <div class="sticky-top shadow">
+    <div class="announce-bar shadow">
+      <p style="margin:0 ; text-align: center; color: white; font-weight: bold; padding: 1%;">מבצע! על כל ההזמנות דרך האתר 5% הנחה על סך ההזמנה</p>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top" style="padding-top: 0;">
+      <div class="container-fluid" style="margin: 0; width: 100%; height: 75px;">
+        <a class="navbar-brand" href="#"><img src="images/logo.jpg" alt="logo" width="200" height="75"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse bg-white" id="navbarSupportedContent" style="justify-content: center;">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html" style="font-size: 15px;">בית</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="suites.html" style="font-size: 15px;">סוויטות</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="font-size: 15px;">מיקום</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="font-size: 15px;">צור קשר</a>
+            </li>
+          </ul>
+        </div>
+        <a class="btn btn-success" style="margin-left:10%;" href="#">הזמן עכשיו</a>
+      </div>
+    </nav>
+  </div>
+  <section>
+<div class="col-12">
+  <div style="display: flex;">
+      <iframe id="bon_oo_frame" src="https://app.b-on.co.il/online/order/provance-boutique" style="border: 0; width: 100%; height:400px;"></iframe>
+  </div>
+</div>
+
+
+
+<!--    <script type="text/javascript">
+        window.addEventListener("message", function(e) {
+            if ( ! e.origin.match("b-on.co.il") ) {
+                // something from an unknown domain, let's ignore it
+                return;
+            }
+
+            /*
+             * postData = {
+             *   step: 1 | 2 | 3 | thanks
+             *   doc_width: Number
+             *   doc_height: Number
+             * }
+             * */
+
+            var postData = e.data;
+            var minHeight = 300;
+            var dh = postData.doc_height;
+            var fh = Math.max(dh, minHeight) + 100;
+
+            document.getElementById("bon_oo_frame").style.height = fh + "px";
+        }, false);
+    </script>-->
+  </section>
+  <footer class="page-footer">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid justify-content-center">
+        <div class="navbar-nav">
+          <a class="nav-link" href="index.html">בית</a>
+          <a class="nav-link active" href="suites.html">סוויטות</a>
+          <a class="nav-link" href="#">מיקום</a>
+          <a class="nav-link" href="#">צור קשר</a>
+          <a class="nav-link" href="#">תנאי הזמנה</a>
+        </div>
+      </div>
+    </nav>
+  </footer>
+</body>
+
+</html>
