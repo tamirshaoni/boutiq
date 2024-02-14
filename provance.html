@@ -47,35 +47,24 @@
   <section>
 <div class="col-12">
   <div style="display: flex;">
-      <iframe id="bon_oo_frame" src="https://app.b-on.co.il/online/order/provance-boutique" style="border: 0; width: 100%; height:400px;"></iframe>
+      <script type="text/javascript">
+(function (i, s, o, g, r, a, m) {
+ i['SBSyncroBoxParam'] = r; i[r] = i[r] || function () {
+ (i[r].q = i[r].q || []).push(arguments)
+ }, i[r].l = 1 * new Date(); a = s.createElement(o),
+ m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; 
+m.parentNode.insertBefore(a, m)
+})(window, document, 'script', 'https://www.simplebooking.it/ibe/search?hid=8304&lang=HE','SBSyncroBox');
+SBSyncroBox({
+ CodLang: 'HE'
+});
+</script>
   </div>
 </div>
 
 
 
-<!--    <script type="text/javascript">
-        window.addEventListener("message", function(e) {
-            if ( ! e.origin.match("b-on.co.il") ) {
-                // something from an unknown domain, let's ignore it
-                return;
-            }
 
-            /*
-             * postData = {
-             *   step: 1 | 2 | 3 | thanks
-             *   doc_width: Number
-             *   doc_height: Number
-             * }
-             * */
-
-            var postData = e.data;
-            var minHeight = 300;
-            var dh = postData.doc_height;
-            var fh = Math.max(dh, minHeight) + 100;
-
-            document.getElementById("bon_oo_frame").style.height = fh + "px";
-        }, false);
-    </script>-->
   </section>
   <footer class="fixed-bottom">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
