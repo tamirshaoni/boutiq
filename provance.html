@@ -11,6 +11,40 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
   <title>ניחוחות פרובנס - סוויטות</title>
+  <style>
+    
+    #sb-container .sb {
+        display: flex !important;
+        gap: 15px;
+    }
+    
+    #sb-container .sb-screen-m .sb__footer-actions {
+        float: right;
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        align-items: flex-start;
+    }
+    
+    #sb-container .sb__dates .sb__form-field {
+        width: calc(50% - 8px);
+        margin-right: 8px;
+    }
+    
+    #sb-container .sb__form-field-label {
+        display: none !important;
+    }
+    
+    #sb-container .sb__btn--verify {
+        margin-top: 0 !important;
+    }
+    
+      #sb-container .sb__footer-link {
+        margin-top: 12px !important;
+    }
+    
+          
+</style>  
 </head>
 
 <body>
@@ -47,20 +81,60 @@
   <section>
 <div class="col-12">
   <div style="display: flex;">
-    <div id="sb-container">
 <script type="text/javascript">
+    
 (function (i, s, o, g, r, a, m) {
- i['SBSyncroBoxParam'] = r; i[r] = i[r] || function () {
- (i[r].q = i[r].q || []).push(arguments)
- }, i[r].l = 1 * new Date(); a = s.createElement(o),
- m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; 
-m.parentNode.insertBefore(a, m)
-})(window, document, 'script', 'https://cdn.simplebooking.it/search-box?script.axd?IDA=8304&lang=EN','SBSyncroBox');
+    i['SBSyncroBoxParam'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+})(window, document, 'script', 'https://cdn.simplebooking.it/search-box-script.axd?IDA=8304','SBSyncroBox');
+
 SBSyncroBox({
- CodLang: 'EN'
+    CodLang: 'EN',
+    
+    Labels: {
+        CheckAvailability: {'EN': 'Book Now' }    
+    },
+    
+    
+    Styles: {
+        Theme: "light-pink",
+        FontFamily: '"Rubik", Sans-serif',
+        CustomColor: "#000",  // Primary color
+        CustomColorHover: "#000",  // Primary hover color 
+        CustomBGColor: "#ffffff00",  // Primary background color
+        CustomFieldBackgroundColor: "#ffffff",  // Calendar fields background color
+        CustomLabelColor: "#000",  // Labels color
+        CustomLabelHoverColor: "#000",  // Lobels color on hover
+        CustomButtonColor:"#fff",  // Buttons color
+        CustomButtonBGColor: "#19322F",  // Buttons background color
+        CustomButtonHoverBGColor:"#C80000",  // Bottons background color on hover
+        CustomIconColor:"#000",  // Icons color
+        CustomLinkColor: "#000",  // Links color
+        CustomWidgetColor: "#000", // Widgets color
+        CustomWidgetBGColor: "#ffffff",  // Widgets background color
+        CustomWidgetElementHoverColor: "#000",  // Widget elements color on hover   
+        CustomWidgetElementHoverBGColor: "#000", // Widget elements background color on hover
+        CustomBoxShadowColor:"#000",  // Box shadows color
+        CustomBoxShadowColorFocus:"#C80000",  // Box shadows color when have focus            
+        CustomBoxShadowColorHover: "#000",  // Box shadows color on hover
+        CustomAddRoomBoxShadowColor: "#000000", // Guests widget add room button border color
+        CustomIntentSelectionColor: "#000", // Color of date range currently selected, when hovering on calendar
+        CustomIntentSelectionDaysBGColor: "#000",  // Background color of intent selection cells
+        CustomSelectedDaysColor: "#fff",  // Color of current selected range
+        CustomAccentColor: "#C80000", // Calendar’s main color
+        CustomAccentColorHover: "#000",  // Calendar’s hover color         
+        CustomCalendarBackgroundColor: "#fff", // Calendar’s background color     
+     
+
+            },
+
+	
 });
 </script>
-      </div>
+    
+    <div id="sb-container"></div> 
   </div>
 </div>
 
